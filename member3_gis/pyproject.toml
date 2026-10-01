@@ -1,0 +1,28 @@
+[project]
+name = "member3-gis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Your Full Name", email = "your-github-email@example.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.142.2",
+    "geopandas>=1.2.0",
+    "networkx>=3.6.1",
+    "pydantic>=2.13.5",
+    "pyproj>=3.7.2",
+    "pyyaml>=6.0.3",
+    "rasterio>=1.4.4",
+    "requests>=2.34.2",
+    "shapely>=2.1.2",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+member3-gis = "member3_gis:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"

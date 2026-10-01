@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "bbox": [85.05, 27.85, 85.45, 28.30],
+    "event_date": "2026-08-26",
+    "snapshot_date": "2026-08-25",
+    "mask_source": "sentinel-1-synthetic",
+    "parameters": {
+      "buffer_m": 0,
+      "min_overlap_m": 10,
+      "max_snap_m": 500
+    },
+    "attributions": ["© OpenStreetMap contributors"]
+  },
+  "statistics": {
+    "flood_area_km2": 15.2,
+    "affected_road_km": 4.5,
+    "unassessed_road_km": 1.2,
+    "assessed_area_fraction": 0.85,
+    "n_bridges": 2,
+    "n_buildings": 120,
+    "n_settlements_total": 10,
+    "n_settlements_connected": 5,
+    "n_settlements_cut_off": 3,
+    "n_settlements_no_road": 1,
+    "n_settlements_unknown": 1
+  },
+  "settlements": [
+    {
+      "id": "node/123456",
+      "name": "Example Village",
+      "name_ne": "उदाहरण गाउँ",
+      "status": "POTENTIALLY_CUT_OFF",
+      "confidence": 0.9,
+      "destination_name": "Main Hospital",
+      "detour_ratio": null,
+      "baseline_distance_m": 5200.5
+    }
+  ],
+  "flood_layer": {
+    "type": "FeatureCollection",
+    "features": []
+  },
+  "roads_layer": {
+    "type": "FeatureCollection",
+    "features": []
+  },
+  "bridges_layer": {
+    "type": "FeatureCollection",
+    "features": []
+  },
+  "buildings_layer": {
+    "type": "FeatureCollection",
+    "features": []
+  },
+  "settlements_layer": {
+    "type": "FeatureCollection",
+    "features": []
+  },
+  "destinations_layer": {
+    "type": "FeatureCollection",
+    "features": []
+  }
+}
