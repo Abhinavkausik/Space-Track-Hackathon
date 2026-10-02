@@ -26,3 +26,10 @@ member3-gis = "member3_gis:main"
 [build-system]
 requires = ["uv_build>=0.12.7,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-mock>=3.16.0",
+    "requests-mock>=1.12.1",
+]
