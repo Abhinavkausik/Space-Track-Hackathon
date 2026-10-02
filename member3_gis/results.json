@@ -1,0 +1,329 @@
+{
+  "metadata": {
+    "bbox": [
+      0.0,
+      0.0,
+      1000.0,
+      1000.0
+    ],
+    "event_date": "2026-08-26",
+    "snapshot_date": "2026-08-25",
+    "mask_source": "Sentinel-1 SAR",
+    "parameters": {
+      "snap_tolerance_m": 5.0
+    },
+    "attributions": [
+      "\u00a9 OpenStreetMap contributors"
+    ]
+  },
+  "statistics": {
+    "flood_area_km2": 0.02,
+    "affected_road_km": 0.4,
+    "unassessed_road_km": 0.0,
+    "assessed_area_fraction": 1.0,
+    "n_bridges": 0,
+    "n_buildings": 0,
+    "n_settlements_total": 6,
+    "n_settlements_connected": 3,
+    "n_settlements_cut_off": 2,
+    "n_settlements_no_road": 1,
+    "n_settlements_unknown": 0
+  },
+  "settlements": [
+    {
+      "id": "S1",
+      "name": "S1_Conn",
+      "name_ne": "",
+      "status": "CONNECTED",
+      "confidence": 0.0,
+      "destination_name": "Alpha Hosp",
+      "detour_ratio": 1.0,
+      "baseline_distance_m": 0.0
+    },
+    {
+      "id": "S2",
+      "name": "S2_Cut",
+      "name_ne": "",
+      "status": "POTENTIALLY_CUT_OFF",
+      "confidence": 1.0,
+      "destination_name": "Unknown",
+      "detour_ratio": 1.0,
+      "baseline_distance_m": 300.0
+    },
+    {
+      "id": "S3",
+      "name": "S3_Cut",
+      "name_ne": "",
+      "status": "POTENTIALLY_CUT_OFF",
+      "confidence": 1.0,
+      "destination_name": "Unknown",
+      "detour_ratio": 1.0,
+      "baseline_distance_m": 400.0
+    },
+    {
+      "id": "S4",
+      "name": "S4_Conn",
+      "name_ne": "",
+      "status": "CONNECTED",
+      "confidence": 0.0,
+      "destination_name": "Echo Town",
+      "detour_ratio": 1.0,
+      "baseline_distance_m": 300.0
+    },
+    {
+      "id": "S5",
+      "name": "S5_Conn",
+      "name_ne": "",
+      "status": "CONNECTED",
+      "confidence": 0.0,
+      "destination_name": "Echo Town",
+      "detour_ratio": 1.0,
+      "baseline_distance_m": 300.0
+    },
+    {
+      "id": "S6",
+      "name": "S6_NoRoad",
+      "name_ne": "",
+      "status": "NO_MAPPED_ROAD_ACCESS",
+      "confidence": 1.0,
+      "destination_name": "Unknown",
+      "detour_ratio": 1.0,
+      "baseline_distance_m": 0.0
+    }
+  ],
+  "flood_layer": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "0",
+        "type": "Feature",
+        "properties": {
+          "area_m2": 20000.0
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                82.51170406503171,
+                0.0009019381382362875
+              ],
+              [
+                82.51170406503171,
+                -0.0009019381382362875
+              ],
+              [
+                82.51259996580693,
+                -0.000901939252670573
+              ],
+              [
+                82.51259996580693,
+                0.000901939252670573
+              ],
+              [
+                82.51170406503171,
+                0.0009019381382362875
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "roads_layer": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              100.0,
+              0.0
+            ]
+          ]
+        },
+        "properties": {
+          "highway": "primary",
+          "is_bridge": false,
+          "length_m": 100.0
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              100.0,
+              0.0
+            ],
+            [
+              200.0,
+              0.0
+            ]
+          ]
+        },
+        "properties": {
+          "highway": "primary",
+          "is_bridge": false,
+          "length_m": 100.0
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              100.0,
+              0.0
+            ],
+            [
+              100.0,
+              100.0
+            ]
+          ]
+        },
+        "properties": {
+          "highway": "secondary",
+          "is_bridge": false,
+          "length_m": 100.0
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              100.0,
+              100.0
+            ],
+            [
+              100.0,
+              200.0
+            ]
+          ]
+        },
+        "properties": {
+          "highway": "secondary",
+          "is_bridge": false,
+          "length_m": 100.0
+        }
+      }
+    ]
+  },
+  "bridges_layer": {
+    "type": "FeatureCollection",
+    "features": []
+  },
+  "buildings_layer": {
+    "type": "FeatureCollection",
+    "features": []
+  },
+  "settlements_layer": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "0",
+        "type": "Feature",
+        "properties": {
+          "id": "S1",
+          "name": "S1_Conn"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            82.51125611561145,
+            4.509687904686866e-05
+          ]
+        }
+      },
+      {
+        "id": "1",
+        "type": "Feature",
+        "properties": {
+          "id": "S2",
+          "name": "S2_Cut"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            82.51219680866065,
+            0.0018038775023990522
+          ]
+        }
+      },
+      {
+        "id": "2",
+        "type": "Feature",
+        "properties": {
+          "id": "S3",
+          "name": "S3_Cut"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            82.51215201068563,
+            0.0027509130211924074
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "type": "Feature",
+        "properties": {
+          "id": "S4",
+          "name": "S4_Conn"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            82.51394381727324,
+            0.001848978894005581
+          ]
+        }
+      },
+      {
+        "id": "4",
+        "type": "Feature",
+        "properties": {
+          "id": "S5",
+          "name": "S5_Conn"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            82.51309271170513,
+            -0.0009019398655153782
+          ]
+        }
+      },
+      {
+        "id": "5",
+        "type": "Feature",
+        "properties": {
+          "id": "S6",
+          "name": "S6_NoRoad"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            82.52021511236633,
+            0.009019487163567083
+          ]
+        }
+      }
+    ]
+  },
+  "destinations_layer": {
+    "type": "FeatureCollection",
+    "features": []
+  }
+}
